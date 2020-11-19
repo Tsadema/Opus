@@ -5,7 +5,7 @@ module.exports = {
     async execute(client, message) {
         try { require.resolve('opusscript'); }
         catch (err2) { return console.error('> "opusscript" is not installed.'); }
-        
+
         
         const voiceChannel = message.member.voiceChannel;
         if (!voiceChannel) return message.reply('you must be in a voice channel to use that command.');
